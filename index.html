@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function padString(string, number, symbol, toStart = true){
+
+            const countSymbols = number - string.length ;
+
+            if (countSymbols < 0) return string;
+
+            for (let i = 0; i < countSymbols; i++){
+
+                if (toStart) string += symbol;
+                if ( !toStart ) string = symbol + string;
+            }
+
+             return string 
+
+        }
+
+        console.log(padString("Valeria", 10, '*', false))
+    </script>
+</body>
+</html>
